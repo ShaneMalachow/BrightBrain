@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+<style>
+body{
+
+	background-image: url("background.jpg"); 
+	background-size: 1750px 820x;
+	background-repeat: no-repeat;
+	background-position: 35%35%;
+	background-attachment: fixed;
+}
+h1{
+	font-family:'Bree Serif', serif;
+	font-size: 60px;
+	color: white;
+	position: absolute;
+	top: 75px;
+	left: 35px;
+	width: 100%;
+}
+h2{
+	font-family:'Bree Serif', serif;
+	font-size: 25px;
+	color: #333;
+	position: absolute;
+	top: 250px;
+	left: 115px;
+	width:50%;
+}
+logBox{
+	font-family:'Bree Serif', serif;
+	font-size: 25px;
+	color: #333;
+	position: absolute;
+	top: 250px;
+	left: 115px;
+	width:50%;
+}
+	
+form {
+    border: 5px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    font-family: "Bree Serif", serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+	font-family: "Bree Serif", serif;
+    background-color: #333;
+	font-size: 20px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+	
+	font-family: "Bree Serif", serif;
+    width: auto;
+    padding: 15px 45px;
+    background-color: #f44336;
+}
+.newAccountbtn {
+	
+	font-family: "Bree Serif", serif;
+    width: auto;
+    padding: 15px 45px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+	font-family: "Bree Serif", serif;
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+	font-size: 25px;
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<title>Log In</title>
+
+<h1> Log In</h1>
+
+	<logBox><form action="form_action.psp">
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="userName" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+ <div class="container" style="background-color:#f1f1f1" >
+    <button type="button" class="cancelbtn" onclick="window.location.replace('main.html')" >Cancel</button>
+    <button type="button" class="newAccountbtn" onclick="window.location.replace('newAccount.html')">Create Account</button>
+	<span class="psw"><a href="#">Forgot password?</a></span>
+  </div>
+</form></logBox>
+</body>
+</html>
