@@ -90,6 +90,9 @@ def processHistory(uid):
         mostCorr = correlation;
         mostCorrFactor = tablef;
         mostCorrResult = tabler;
+        
+    #After all processing
+    return {"positivity":mostCorr/abs(mostCorr), "effect":mostCorrFactor, "result":mostCorrResult};
     
     
     
