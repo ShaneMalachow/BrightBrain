@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Log Exercise</title>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<style>
+ul {
+    font-family:'Bree Serif', serif;
+	font-size: 20px;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 112px;
+    text-decoration: none;
+}
+li a:hover{
+background-color: #369;
+}
+form {
+    border: 5px solid #f1f1f1;
+}
+input[type=text]{
+	font-family: 'Bree Serif', serif;
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Bree Serif', serif;
+	background-image: url('images/background.jpg');
+	background-size: 1750px 820x;
+	background-repeat: no-repeat;
+	background-position: 35%35%;
+	background-attachment: fixed;
+	margin: 0px;
+	color: black;
+	min-width: 900px;
+	max-width:850px;
+	font-size: 20px;
+}
+h1{
+	font-family:'Bree Serif', serif;
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	width: 100%;
+	top: 25px;
+}
+button {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    left: 55px;
+}
+    .submitbtn{
+     width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    }
+
+</style>
+</head>
+<body>
+<br>
+<h1>Log Exercise</h1>
+<br>
+<section id="nav-bar">
+<nav class="navbar navbar-fixed-top">
+<div class="navbar-header">
+		<span class="icon-bar white"></span>
+        <span class="icon-bar white"></span>
+        <span class="icon-bar"></span> 
+    </div> 
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav nav-tabs">
+				<li><img src="images/logo.png" style="width:32px;height:35px"><font color="white">Bright Brain</font></li>
+				<li><a href="main.html">Home</a></li>
+				<li><a href="LogIn.html">Log In</a></li>
+				<li><a href="sleep.html">Sleep</a></li>
+				<li><a href="exercise.html">Exercise</a></li>
+</ul>
+</div>
+</nav>
+</section>
+<br><br><br>
+<form action="form_action.asp" method="post">
+  <div class="container"><br>
+ 	<label><b>Today's Date: MM/DD/YYYY</b></label><br><br>
+    <label><b>Month:&nbsp &nbsp </b></label>
+    <input type="text" placeholder="Month" name="month" required>&nbsp
+    <label><b>Day:&nbsp</b></label>
+    <input type="text" placeholder="Day" name="day" required>&nbsp
+    <label><b>Year: &nbsp </b></label>
+    <input type="text" placeholder="Year" name="year" required>&nbsp
+    <br><br>
+   	<label><b>Excercise Type:</b></label><br>
+    <input type="checkbox" name="aerobic" value="aerobic"><label><b>Aerobic</b></label><br>
+    <input type="checkbox" name="muscle" value="muscle"><label><b>Muscle Training</b></label><br>
+    <input type="checkbox" name ="other" value="other"><label><b>Other</b></label><br>
+    <br>
+    
+    <label><b>Start Time:&nbsp &nbsp &nbsp &nbsp &nbsp</b></label>
+    <input type="text" placeholder="Enter Start Time" name="start" required><br>
+    <label><b>End Time: &nbsp &nbsp &nbsp &nbsp &nbsp</b></label>
+    <input type="text" placeholder="Enter End Time" name="end" required><br>
+    <br>
+    
+   <button type="submit"><b>Submit</b></button>
+  </div>
+</form>
+</body>
+</html>
